@@ -43,6 +43,39 @@
 				var body = document.querySelector('body');
 				console.log(body);
 			};
+
+
+			// localStorage 신기술을 사용자의 브라우저가 지원하는지 유무 파악
+			// if (window.localStorage) {
+			// 	var old_html_attr = html.getAttribute('class');
+			// 	// typeof 데이터 유형 체크
+			// 	console.log(typeof old_html_attr);
+			// 	html.setAttribute('class', old_html_attr + ' localstorage');
+			// } else {
+			// 	html.setAttribute('class', 'no-localstorage');
+			// }
+
+			function detectFeature(feature) {
+				// Javascript 호이스트(Hoist) 처리됩니다.
+				// 호이스트란? 영역(Scope)의 최상단으로 변수, 함수가 끌어올려지는 현상...
+				var old_html_attr = ''; // undefined
+				// 데이터 유효성 검사
+				if ( typeof feature !== 'string') {
+					// throw new Error('detectFeature 함수는 인자를 문자열로 받습니다.');
+					console.error('detectFeature 함수는 인자를 문자열로 받습니다.');
+					return;
+				}
+				// 객체 판별법을 사용한 기능 감지 처리
+				if ( window[feature] ) {
+					old_html_attr = html.getAttribute('class');
+					html.setAttribute('class', old_html_attr + ' ' + feature);
+				} else {
+					html.setAttribute('class', old_html_attr + ' no-' + feature);
+				}
+			}
+
+			detectFeature('localStorage');
+			detectFeature('sessionStorage');
 		</script>
 	</head>
 	<!--
