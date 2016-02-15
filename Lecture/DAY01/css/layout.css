@@ -1,8 +1,35 @@
+/* CSS 공간 설정 초기화 */
 body {
 	margin: 0;
 }
+
+/* CSS 레이아웃 재사용 모듈 */
+.demo .fl {float: left;}
+.demo .fr {float: right;}
+
 
 p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.demo {
+	width: 60%;
+	margin: 80px auto;
+}
+
+.demo img {
+	float: left;
+	margin-right: 10px;
+}
+
+.demo:last-child {
+	background: #000;
+	color: #fff;
+}
+
+/*.demo2 img {*/
+/*1st, 2nd, 3rd, 4th, 5th, ...., nth*/
+/*.demo:nth-child(odd) img {
+	float: right;
+}*/
