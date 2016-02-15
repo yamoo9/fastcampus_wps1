@@ -4,9 +4,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta charset="UTF-8">
 		<title>모더나이저(Modernizr) 라이브러리 활용</title>
+		<!-- HTML, CSS, JS 등 새로운 기술을 감지하여 처리하는 라이브러리 -->
 		<script src="js/lib/modernizr.custom.min.js"></script>
 	</head>
 	<body>
 
+		<!-- div.item-${item-$}*2 -->
+		<div class="item-1">item-1</div>
+		<div class="item-2">item-2</div>
+
+		<script>
+			var html = document.querySelector('html');
+			alert('처리 이전');
+			if ( html.getAttribute('class').indexOf('flexbox') > -1 ) {
+				document.querySelector('.item-1').innerHTML = 'CSS Flexbox 모듈 지원!';
+			}
+		</script>
 	</body>
 </html>
