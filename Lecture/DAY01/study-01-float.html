@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>Javascript 사용 유무 감지</title>
+		<style>
+			.unsupport_js {
+				display: none;
+			}
+			.no-js .unsupport_js {
+				display: block;
+			}
+		</style>
+		<script>
+			// html 요소에 접근
+			// [BOM]
+			// window
+			// 	location
+			// 	document [DOM]
+			// 	history
+			// 	navigator
+			// 	screen
+
+			// 과거에 사용되던 DOM API를 사용하여 루트 요소에 접근하는 방법
+			// var legacy_html = document.documentElement;
+			// console.log( 'legacy_html: ', legacy_html );
+
+			// 과거에 사용되던 DOM API 방식으로 class 속성 값을 설정
+			// html.className = 'js';
+
+			// 새로운 DOM API를 사용하여 루트 요소에 접근하는 방법
+			var html = document.querySelector('html');
+			console.log( html );
+
+			// 새로운 DOM API 방식으로 class 속성 값을 설정
+			html.setAttribute('class', 'js');
+
+			// HTML Parser는 <script> 코드가 해석될 때는 일을 하지 않고 쉽니다.
+			// 그렇기 때문에 문서의 모든 것이 내려 받아진 순간(Event)에 일을 실행하게 구현해야 합니다.
+			window.onload = function() {
+				// CSS의 신기술을 지원하는지 유무를 파악
+				var body = document.querySelector('body');
+				console.log(body);
+			};
+		</script>
+	</head>
+	<!--
+		인라인 스타일 방식은 코드를 비효율적으로 관리하게 하는 주범입니다.
+		가급적 사용하지 않는 것이 좋은 습관입니다.
+	-->
+	<body style="background: red; color: white;">
+		<p class="unsupport_js">javascrpt가 지원되지 않는 환경입니다.</p>
+		<h1>hi, there :-)</h1>
+	</body>
+</html>
