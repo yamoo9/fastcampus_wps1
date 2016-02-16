@@ -26,11 +26,14 @@ body {
 	/* // Flexbox Module */
 
  	float: left;
- 	/*margin-right: 10px;
- 	margin-left: 10px;*/
+ 	box-sizing: border-box;
+ 	margin-right: 10px;
+ 	margin-left: 10px;
+ 	border: 5px solid red;
  	padding-left: 20px;
  	padding-right: 20px;
- 	width: 160px;
+ 	width: 180px;
+
  	height: 80px;
  	/*line-height: 80px;*/
  	/*text-align: center;*/
@@ -40,26 +43,26 @@ body {
  }
 
 .col:nth-child(1) {
-	background: #1677cb;
-	color: #ececec;
+	/*background: #1677cb;*/
+	/*color: #ececec;*/
 }
 .col:nth-child(2) {
-	background: #2c91e8;
-	color: #e6e8ed;
+	/*background: #2c91e8;*/
+	/*color: #e6e8ed;*/
 }
 .col:nth-child(3) {
-	background: #5aa9ed;
-	color: #e1e3e5;
+	/*background: #5aa9ed;*/
+	/*color: #e1e3e5;*/
 }
 .col:nth-child(4) {
-	background: #88c1f2;
-	color: #4c80b5;
+	/*background: #88c1f2;*/
+	/*color: #4c80b5;*/
 }
 .col:nth-child(5) {
-	background: #b6d9f7;
-	color: #4c80b5;
+	/*background: #b6d9f7;*/
+	/*color: #4c80b5;*/
 }
 .col:nth-child(6) {
-	background: #e4f1fc;
-	color: #4c80b5;
+	/*background: #e4f1fc;*/
+	/*color: #4c80b5;*/
 }

@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+}
+
+.parent {
+	position: relative;
+	height:     400px;
+	margin:     100px 10%;
+	background: #353535;
+}
+
+.parent::before {
+	position: absolute;
+	/*background: #000;*/
+	/*width: 600px;
+	height: 100px;
+	margin: -50px 0 0 -300px;*/
+	/*width: 5.6em;*/
+	width: 15em;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	content: attr(title);
+	color: #fff;
+	font-size: 100px;
+	letter-spacing: -0.03em;
+	font-family: "Helvetica Neue";
+	font-weight: 100;
+}
+
+.child {
+	position: absolute;
+	width:      140px;
+	height:     100px;
+	transition: all 0.345s ease-out;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transform-origin: 50% 50%;
+}
+
+.child:hover {
+	z-index: 100;
+	transform: scale(1.2);
+}
+
+.child::before {
+	display:     block;
+	content:     attr(class);
+	color:       #fff;
+	font-size:   1.5em;
+	text-align:  center;
+	line-height: 100px;
+}
+
+.child:first-child {
+	top: -50px;
+	left: -70px;
+	background: #DA7D85;
+}
+
+.child:first-child:hover {
+	background: #4E292D;
+}
+
+.child:nth-child(2) {
+	top: -50px;
+	right: -70px;
+	background: #8064D1;
+}
+
+.child:nth-child(2):hover {
+	background: #312358;
+}
+
+.child:nth-child(3) {
+	bottom: -50px;
+	left: -70px;
+	background: #C6CA52;
+}
+
+.child:nth-child(3):hover {
+	background: #565A21;
+}
+
+.child:last-child {
+	bottom: -50px;
+	right: -70px;
+	background: #6DC5D2;
+}
+
+.child:last-child:hover {
+	background: #2E575E;
+}

@@ -1,0 +1,13 @@
+/**
+ * --------------------------------
+ * 모든 프로젝트에 공통으로 사용되는 스타일 모듈
+ * CSS 초기화(reset)
+ * ----------------------------- */
+
+body, body *,
+body::before,
+body::after,
+body *::before,
+body *::after {
+	box-sizing: border-box;
+}
