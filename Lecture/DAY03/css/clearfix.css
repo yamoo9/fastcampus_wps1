@@ -1,0 +1,35 @@
+@import "module/common.css";
+
+body {
+	margin: 0;
+}
+
+.parent {
+	position:   fixed;
+	width:      800px;
+	margin:     80px auto;
+	background: #FE4940;
+}
+
+.child {
+	float:      right;
+	width:      400px;
+	height:     400px;
+	background: #FC8684;
+}
+
+.sibling {
+	float:      left;
+	width:      200px;
+	height:     200px;
+	background: #7E3A3C;
+}
+
+/*.clearfix {
+	clear: both;
+}*/
+
+main {
+	margin-left: 30%;
+	margin-right: 30%;
+}

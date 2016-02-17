@@ -4,13 +4,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>CSS 박스모델 레이아웃 테크닉</title>
+	<!-- 모바일 최적화 Meta 코드 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
 
 	<header class="print_name" data-name="header"></header>
 	<nav class="print_name" data-name="nav"></nav>
-	<main class="print_name" data-name="main"></main>
+	<main class="print_name" data-name="main">
+		<!-- article.post*3>h2.post-title{Post Title $} -->
+		<article class="post">
+			<h2 class="post-title">Post Title 1</h2>
+		</article>
+		<article class="post mobile-hidden">
+			<h2 class="post-title">Post Title 2</h2>
+		</article>
+		<article class="post">
+			<h2 class="post-title">Post Title 3</h2>
+		</article>
+	</main>
 	<aside class="print_name" data-name="aside"></aside>
 	<footer class="print_name" data-name="footer"></footer>
 

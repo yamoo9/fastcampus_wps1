@@ -1,0 +1,42 @@
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	font: 87.5%/1.5 "Nanum Gothic", Gulim, Dotum, Sans-Serif;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/**
+ * --------------------------------
+ * 클릭어픽스
+ */
+.clearfix::after {
+	content: '';
+	display: block;
+	clear:   both;
+}
+
+.micro-cf::before,
+.micro-cf::after {
+	display: table;
+	content: '';
+}
+.micro-cf::after {
+	clear: both;
+}
+
+/**
+ * --------------------------------
+ * 가운데 박스 정렬
+ */
+.center-position {
+	position:  absolute;
+	top:       50%;
+	left:      50%;
+	transform: translate(-50%, -50%);
+}
