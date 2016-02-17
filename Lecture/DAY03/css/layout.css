@@ -1,0 +1,84 @@
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	font: 87.5%/1.5 "Nanum Gothic", Gulim, Dotum, Sans-Serif;
+}
+
+/**
+ * --------------------------------
+ * CSS 레이아웃
+ * Float
+ * ----------------------------- */
+
+.print_name {
+	position: relative;
+}
+
+.print_name::before {
+	content:    attr(data-name);
+	/* position: absolute 적용된 박스를 가운데 정렬 */
+	position:   absolute;
+	top:        50%;
+	left:       50%;
+	transform:  translate(-50%, -50%);
+	/* // */
+	color:       #fff;
+	font-size:   2.4em;
+	line-height: 1;
+}
+
+header {
+	height:     100px;
+	background: #54AEC3;
+}
+
+nav {
+	height:     60px;
+	background: #367A8B;
+}
+
+main {
+	height:     600px;
+	background: #536CB0;
+}
+
+aside {
+	height:     600px;
+	background: #908D9F;
+}
+
+footer {
+	clear:      left;
+	height:     80px;
+	background: #151417;
+}
+
+/**
+ * --------------------------------
+ * 반응형 구현
+ * CSS3 Media Queries
+ * @media
+ * ----------------------------- */
+@media only screen and (min-width: 860px) {
+	main {
+		float: left;
+		width: 50%;
+	}
+	aside {
+		float: left;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	main {
+		float: right;
+		width: 80%;
+	}
+	aside {
+		width: 20%;
+	}
+}
