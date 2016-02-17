@@ -29,12 +29,11 @@ body {
 .banner img[src$="apes.png"] {
 	top: 169px;
 	left: 100%;
-	transition: left 0.45s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition: left 0.45s cubic-bezier(0.13, 0.79, 0.74, 0.94);
 }
 
 /*FINISH*/
 .banner:hover img[src$="apes.png"] {
-	top: 169px;
 	left: 4px;
 }
 
