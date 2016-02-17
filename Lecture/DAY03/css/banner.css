@@ -1,0 +1,59 @@
+@import "module/common.css";
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #000;
+}
+
+/**
+ * --------------------------------
+ * Banner Design
+ * ----------------------------- */
+.banner {
+	position: relative;
+	/*top: 300px;*/
+	overflow: hidden;
+	width: 800px;
+	height: 320px;
+	/*-webkit-box-reflect: below 2px linear-gradient(180deg, transparent 40%, white);*/
+}
+
+.banner img:not([src$="BG.png"]) {
+	position: absolute;
+}
+
+/*START*/
+.banner img[src$="apes.png"] {
+	top: 169px;
+	left: 100%;
+	transition: left 0.45s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+/*FINISH*/
+.banner:hover img[src$="apes.png"] {
+	top: 169px;
+	left: 4px;
+}
+
+.banner.finish img[src$="golliras.png"] {
+	top: 110px;
+	left: 11px;
+}
+
+.banner.finish img[src$="kingkong.png"] {
+	top: 28px;
+	right: 11px;
+}
+
+.banner.finish img[src$="s-and-n-logo.png"] {
+	top: 18px;
+	left: 18px;
+}
+
+.banner.finish img[src$="Design.png"] {
+	top: 31px;
+	left: 119px;
+}
