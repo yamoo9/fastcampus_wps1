@@ -12,14 +12,15 @@ body {
 	background: #bababa;
 }
 .page {
+	margin-top: 50px;
 	min-height: 100vh;
 }
 
 .page .row {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .page .row > div {
 	height: 80px;
-	background: rgba(0,0,0,0.6);
+	background: #333;
 }

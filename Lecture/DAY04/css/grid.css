@@ -17,7 +17,16 @@
 	margin-right: auto;
 }
 
-.container.grid {
+.grid::before {
+	opacity: 0.6;
+	position: absolute;
+	z-index: 10000;
+	width: 1200px;
+	height: 300vh;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	content: '';
 	background: url(../images/grid-module.png);
 }
 
