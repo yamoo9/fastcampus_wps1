@@ -1,0 +1,133 @@
+/**
+ * --------------------------------
+ * 그리드 시스템 설계
+ * 페이지 폭 1200px
+ * 컬럼 개수 12
+ * 거터 폭  20px(10px 10px)
+ * 컬럼 폭 1200/12 - 20 = 80px
+ * ----------------------------- */
+
+/**
+ * --------------------------------
+ * 그리드 컨테이너
+ */
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container.grid {
+	background: url(../images/grid-module.png);
+}
+
+/**
+ * --------------------------------
+ * 로우(행)
+ */
+.row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/**
+ * --------------------------------
+ * 컬럼
+ */
+ /*.col-1,
+ .col-2,
+ .col-3,
+ .col-4,
+ .col-5,
+ .col-6,
+ .col-7,
+ .col-8,
+ .col-9,
+ .col-10,
+ .col-11,
+ .col-12 {*/
+[class*="col-"] {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* width: 80px * 1 + (20px * (1-1)) */
+.col-1  { width: 80px;   }
+.col-2  { width: 180px;  }
+.col-3  { width: 280px;  }
+.col-4  { width: 380px;  }
+.col-5  { width: 480px;  }
+.col-6  { width: 580px;  }
+.col-7  { width: 680px;  }
+.col-8  { width: 780px;  }
+.col-9  { width: 880px;  }
+.col-10 { width: 980px;  }
+.col-11 { width: 1080px; }
+.col-12 { width: 1180px; }
+
+/**
+ * --------------------------------
+ * 푸시, 풀
+ */
+.push-1 { margin-left: 110px; }
+.push-2 { margin-left: 210px; }
+.push-3 { margin-left: 310px; }
+.push-4 { margin-left: 410px; }
+.push-5 { margin-left: 510px; }
+.push-6 { margin-left: 610px; }
+.push-7 { margin-left: 710px; }
+.push-8 { margin-left: 810px; }
+.push-9 { margin-left: 910px; }
+.push-10 { margin-left: 1010px; }
+.push-11 { margin-left: 1110px; }
+.push-12 { margin-left: 1210px; }
+
+.pull-1 { margin-left: -90px; }
+.pull-2 { margin-left: -190px; }
+.pull-3 { margin-left: -290px; }
+.pull-4 { margin-left: -390px; }
+.pull-5 { margin-left: -490px; }
+.pull-6 { margin-left: -590px; }
+.pull-7 { margin-left: -690px; }
+.pull-8 { margin-left: -790px; }
+.pull-9 { margin-left: -890px; }
+.pull-10 { margin-left: -990px; }
+.pull-11 { margin-left: -1090px; }
+.pull-12 { margin-left: -1190px; }
+
+/**
+ * --------------------------------
+ * 프리픽스, 서픽스
+ */
+[class*="prefix-"],
+[class*="suffix-"] {
+	box-sizing: content-box;
+}
+
+.prefix-1 { padding-left: 100px; }
+.prefix-2 { padding-left: 200px; }
+.prefix-3 { padding-left: 300px; }
+.prefix-4 { padding-left: 400px; }
+.prefix-5 { padding-left: 500px; }
+.prefix-6 { padding-left: 600px; }
+.prefix-7 { padding-left: 700px; }
+.prefix-8 { padding-left: 800px; }
+.prefix-9 { padding-left: 900px; }
+.prefix-10 { padding-left: 1000px; }
+.prefix-11 { padding-left: 1100px; }
+.prefix-12 { padding-left: 1200px; }
+
+.suffix-1 { padding-right: 100px; }
+.suffix-2 { padding-right: 200px; }
+.suffix-3 { padding-right: 300px; }
+.suffix-4 { padding-right: 400px; }
+.suffix-5 { padding-right: 500px; }
+.suffix-6 { padding-right: 600px; }
+.suffix-7 { padding-right: 700px; }
+.suffix-8 { padding-right: 800px; }
+.suffix-9 { padding-right: 900px; }
+.suffix-10 { padding-right: 1000px; }
+.suffix-11 { padding-right: 1100px; }
+.suffix-12 { padding-right: 1200px; }

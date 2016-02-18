@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS 모듈 호출 */
+@import "reset.css";
+@import "common.css";
+@import "grid.css";
+
+/**
+ * --------------------------------
+ * 페이지 디자인
+ * ----------------------------- */
+body {
+	background: #bababa;
+}
+.page {
+	min-height: 100vh;
+}
+
+.page .row {
+	margin-bottom: 30px;
+}
+
+.page .row > div {
+	height: 80px;
+	background: rgba(0,0,0,0.6);
+}
