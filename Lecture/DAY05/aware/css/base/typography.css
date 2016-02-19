@@ -1,0 +1,112 @@
+/*! typography.css © yamoo9.net, 2015 */
+body {
+	/*
+		14px/16px * 100% = 87.5%
+		14px * 1.5 = 21px
+	*/
+	font: 87.5%/1.5 "Nanum Gothic", Dotum, Sans-Serif;
+}
+
+:lang(en) {
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Sans-Serif;
+}
+
+h1 {
+	/*
+		14px * 4 = 56px = 4em
+	*/
+	font-size: 4em;
+	/*
+		21px * 3 = 63px
+		63px/56px = 1.125
+	*/
+	line-height: 1.125;
+	/*
+		1/4em * 1.5 = 0.38em
+	*/
+	margin-bottom: 0.38em;
+}
+
+h2 {
+	/*
+		14px * 3 = 42px = 3em
+	*/
+	font-size: 3em;
+	/*
+		21px * 3 = 63px
+		63px/42px = 1.5
+	*/
+	line-height: 1.5;
+	/*
+		1/3em * 1.5 = 0.5em
+	*/
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	/*
+		14px * 2 = 28px = 2em
+	*/
+	font-size: 2em;
+	/*
+		21px * 2 = 42px
+		42px/28px = 1.5
+	*/
+	line-height: 1.5;
+	/*
+		1/2em * 1.5 = 0.75em
+	*/
+	margin-bottom: 0.75em;
+}
+
+h4 {
+	/*
+		14px * 1.5 = 21px = 1.5em
+	*/
+	font-size: 1.5em;
+	/*
+		21px * 2 = 42px
+		42px/21px = 2
+	*/
+	line-height: 2;
+	/*
+		1/1.5em * 1.5 = 1em
+	*/
+	margin-bottom: 1em;
+}
+
+h5 {
+	/*
+		14px * 1.25 = 17.5px = 1.25em
+	*/
+	font-size: 1.25em;
+	/*
+		21px * 1 = 21px
+		21px/17.5px = 1.2
+	*/
+	line-height: 1.2;
+	/*
+		1/1.25em * 1.5 = 1.2em
+	*/
+	margin-bottom: 1.2em;
+}
+
+h6 {
+	/*
+		14px * 1.1425 = 16px = 1.1425em
+	*/
+	font-size: 1.1425em;
+	/*
+		21px * 1 = 21px
+		21px/16px = 1.31
+	*/
+	line-height: 1.31;
+	/*
+		1/1.1425em * 1.5 = 1.31em
+	*/
+	margin-bottom: 1.31em;
+}
+
+p {
+	margin-bottom: 1.5em;
+}

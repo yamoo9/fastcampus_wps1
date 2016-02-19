@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Oswald:700");
+
+.varela {
+	font-family: 'Varela Round', sans-serif;
+}
+
+.oswald-bold {
+	font-family: 'Oswald', sans-serif;
+	/*font-weight: bold;*/
+	font-weight: 700;
+}
