@@ -33,5 +33,4 @@
  * 각 섹션의 구조 스타일 모듈 호출
  * --------------------------------
  */
-/*@import url("structure/header.css");
-@import url("structure/slider.css");*/
+@import "pages/header.css";

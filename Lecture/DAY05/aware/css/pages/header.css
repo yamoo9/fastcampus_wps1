@@ -1,0 +1,30 @@
+/**
+ * --------------------------------
+ * Page Header
+ * ----------------------------- */
+.page-header {
+	min-height: 80px;
+	padding-top: 30px;
+	background: #fff;
+}
+
+.page-header div {
+	/*height: 80px;*/
+	/*background: #333;*/
+}
+
+.brand-aware {
+
+}
+
+.brand-aware a {
+	position: relative;
+	left: -38px;
+}
+
+.off-canvas-menu a {
+	display: block;
+	width: 30px;
+	height: 25px;
+	background: url(../../images/svg/svg-icon-hamberger.svg) center no-repeat;
+}
