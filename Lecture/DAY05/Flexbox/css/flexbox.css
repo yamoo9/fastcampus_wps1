@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 1rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.flex-container {
+	/* Flexbox로 설정 */
+	display: flex;
+	/*display: inline-flex;*/
+	/* Flexbox의 흐름 방향(Flow Direction) 설정 */
+	/*flex-direction: column-reverse;*/
+	/* Flexbox의 감싸는 설정 */
+	/*flex-wrap: wrap-reverse;*/
+	/* Flexbox 방향/감쌈 속기형 속성 */
+	/*flex-flow: row nowrap;*/
+	/* 주축을 기준으로 삼아서 정렬 */
+	/*justify-content: space-between;*/
+	/*
+		flex-start
+		center
+		flex-end
+		space-between
+		space-around
+	 */
+	align-items: flex-start;
+	border: 6px solid #E9E924;
+}
+
+.flex-item {
+	/*width: 700px;*/
+	padding: 1rem;
+	/*flex-grow: 1;*/
+	/*flex-shrink: 0;*/
+	/*flex-basis: 1600px;*/
+	/*flex: grow shrink basis;*/
+	flex: 1 1 300px;
+	text-align: center;
+}
+
+.flex-item:nth-child(1n) { background: #E47052; }
+.flex-item:nth-child(2n) { background: #A1C448; }
+.flex-item:nth-child(3n) { background: #46BD9B; }
+
+.flex-item:first-child {
+	/*order: 1;*/
+	/*flex-grow: 2;*/
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-item:nth-child(3) {
+	align-self: center;
+}
+
+.flex-item:last-child {
+	/*order: -1;*/
+	align-self: flex-end;
+}
+
+.flex-item em {
+	font-style: normal;
+	font-size: 1.2rem;
+}

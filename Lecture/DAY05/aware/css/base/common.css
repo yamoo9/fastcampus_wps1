@@ -3,6 +3,12 @@
 	text-indent: -9999em;
 }
 
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .a11y-hidden {
 	position: absolute;
 	overflow: hidden;

@@ -23,8 +23,29 @@
 }
 
 .off-canvas-menu a {
+	margin-left: 21px;
+	margin-top: -2px;
 	display: block;
 	width: 30px;
 	height: 25px;
 	background: url(../../images/svg/svg-icon-hamberger.svg) center no-repeat;
+}
+
+.gnb li {
+	/* display: inline; */
+	float: left;
+	margin-right: 1.875rem;
+}
+
+.gnb li:last-child {
+	margin-right: 0;
+}
+
+.gnb a {
+	padding: 0.625rem 1rem 0.625rem 0;
+	color: #222;
+	background: url(../../images/svg/svg-icon-arrow-down.svg) right center no-repeat;
+	font-size: 0.875rem;
+	text-decoration: none;
+	/* letter-spacing: -0.02em; */
 }
