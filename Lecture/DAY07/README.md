@@ -132,7 +132,7 @@ Javascript 애플리케이션, 웹 사이트 내 모든 코드 사이에서 공�
 - 광고 제휴 업체 스크립트
 
 
-[`상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
+[`Javascript 코딩 패턴 - 상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
 
 -
 
@@ -231,7 +231,7 @@ typeof global_no_var; // 'undefined'
 typeof local_no_var;  // 'undefined'
 ```
 
-[`상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
+[`Javascript 코딩 패턴 - 상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
 
 -
 
@@ -309,7 +309,7 @@ hoistingEx(); // local declaration
 함수 표현식과 선언되지 않은 변수들이 생성된다.
 
 
-[`상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
+[`Javascript 코딩 패턴 - 상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
 
 -
 
@@ -344,7 +344,7 @@ null         ===   undefined     // false
 
 
 
-[`상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
+[`Javascript 코딩 패턴 - 상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
 
 -
 
@@ -413,7 +413,7 @@ while ( i-- ) {
 ```
 
 
-[`상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
+[`Javascript 코딩 패턴 - 상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
 
 -
 
@@ -491,7 +491,7 @@ for(var prop in my_cat) {
 ```
 
 
-[`상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
+[`Javascript 코딩 패턴 - 상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
 
 -
 
@@ -540,7 +540,7 @@ setInterval('book.selling()', 2200);
 setInterval(book.selling, 2200);
 ```
 
-[`상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
+[`Javascript 코딩 패턴 - 상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
 
 -
 
@@ -563,7 +563,7 @@ console.log('month: ' + month, 'date: ' + date);
 ```
 
 
-[`상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
+[`Javascript 코딩 패턴 - 상위로 이동 ↑`](#javascript-%EC%BD%94%EB%94%A9-%ED%8C%A8%ED%84%B4)
 
 ---
 
