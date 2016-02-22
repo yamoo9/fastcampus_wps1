@@ -5,7 +5,6 @@
 // var divs = selector('div');
 // var links = selector('a');
 
-
 // addAttribute(body, 'data-module', 'dom-helper');
 
 // addAttribute(body, 'class', 'hi');

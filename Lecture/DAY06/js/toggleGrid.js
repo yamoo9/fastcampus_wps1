@@ -1,11 +1,7 @@
 var toggleBtn = $('.toggle-grid');
 
-toggleBtn.onclick = function() {
-	toggleGrid('.container', 'grid');
-	return false;
-};
-
 function toggleGrid(selector, className) {
+	'use strict';
 	$(selector).classList.toggle(className);
 	// if ( $(selector).classList.contains(className) ) {
 	// 	$(selector).classList.remove(className);
@@ -13,4 +9,10 @@ function toggleGrid(selector, className) {
 	// 	$(selector).classList.add(className);
 	// }
 }
+
+toggleBtn.onclick = function() {
+	'use strict';
+	toggleGrid('.container', 'grid');
+	return false;
+};
 
