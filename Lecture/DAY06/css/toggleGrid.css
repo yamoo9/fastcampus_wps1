@@ -9,22 +9,28 @@ body {
 .container {
 	position: relative;
 	width: 1200px;
+	height: 0;
 	margin: 0 auto;
 }
 
-.container.grid::before {
+.container::before {
 	content: '';
 	position: absolute;
 	z-index: 1000;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 200vh;
+	height: 0;
 	/*background: url(../images/grid-module.png);*/
 	background: linear-gradient(180deg, transparent 95%, #3A0099),
 	            linear-gradient(90deg, transparent 0%, transparent 10%, #7B51BF 10%, #7B51BF 90%, transparent 90%);
 	background-size: 100% 10px,
 					 100px 100%;
+	transition: height 0.8s ease-out;
+}
+
+.container.grid::before {
+	height: 200vh;
 }
 
 .button {
@@ -39,6 +45,7 @@ a.button {
 
 .toggle-grid {
 	position: fixed;
+	z-index: 10000;
 	top: 30px;
 	right: 30px;
 	color: #7045CF;
