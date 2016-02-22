@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>돔 스크립트 - DOM + Javascript: 클라이언트의 자바스크립트 실행 흐름과 HTML 파서</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- #1 -->
+	<script>
+		// 전역객체 window 객체 (인스턴스)
+		// 전역에서 사용되는 함수 -> window 객체의 메소드
+		window.alert('JS Start...');
+		// 전역객체는 생략이 가능...
+		// alert('JS Start...');
+	</script>
+</head>
+<body>
+	<script>
+		window.alert('Body Element Start...');
+	</script>
+	<!-- #2 -->
+	<div class="page">
+		<script>
+			window.alert('.page Element Start...');
+		</script>
+		<h1 class="page-title">문서객체모델과 클라이언트 환경의 자바스크립트</h1>
+		<!-- #3 -->
+		<script>
+			window.alert('.page Element End...');
+		</script>
+	</div>
+	<!-- #4 -->
+	<script>
+		window.alert('Body Element End...');
+	</script>
+</body>
+</html>

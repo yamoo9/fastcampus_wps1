@@ -1,0 +1,56 @@
+@charset "utf-8";
+html {
+	overflow-y: visible;
+}
+body {
+	margin: 0;
+}
+
+.container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.container.grid::before {
+	content: '';
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200vh;
+	/*background: url(../images/grid-module.png);*/
+	background: linear-gradient(180deg, transparent 95%, #3A0099),
+	            linear-gradient(90deg, transparent 0%, transparent 10%, #7B51BF 10%, #7B51BF 90%, transparent 90%);
+	background-size: 100% 10px,
+					 100px 100%;
+}
+
+.button {
+	padding: 0.6em 0.8em;
+	border: 2px solid;
+	border-radius: 4px;
+}
+
+a.button {
+	text-decoration: none;
+}
+
+.toggle-grid {
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	color: #7045CF;
+	transition: all 0.3s ease-out;
+}
+
+.toggle-grid:hover,
+.toggle-grid:focus {
+	background: #D1BDFB;
+	transform: scale(1.2);
+}
+
+.toggle-grid:focus {
+	outline: none;
+}
