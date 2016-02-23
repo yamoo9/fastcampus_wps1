@@ -71,4 +71,26 @@ function addAttribute(element, property, value) {
 	}
 }
 
+// 속성을 설정하는데 도움을 주는 헬퍼 함수 attr()
+function attr(el, prop, value) {
+	// 유효성 검사
+	// 전달받은 각각의 인자 데이터 유형이 올바른지 검수
+	if (!el || el.nodeType !== 1) {
+		throw new Error('첫번째 전달인자는 요소노드여야 합니다.');
+	}
+
+	if ( !isType(prop, 'string') ) {
+		throw new Error('두번째 전달인자는 문자 데이터 유형이어야 합니다.');
+	}
+
+	if ( value ) {
+		// SET
+		el.setAttribute(prop, value);
+	} else {
+		// GET
+		return el.getAttribute(prop);
+	}
+
+}
+
 window.$ = selector;

@@ -637,4 +637,6 @@ console.log('month: ' + month, 'date: ' + date);
 - [Javascript: 세상에서 제일 잘못 이해되고 있는 언어 by Douglas Crokford](http://vandbt.tistory.com/36)
 - [MDN 개발자를 위한 웹 기술: Javascript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 - [Eloquent Javascript](http://eloquentjavascript.net/)
+- [Learning Javascript Design Patterns Book](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+- [JavaScript Patterns Book](http://www.vegeta.com/datastore/filestore/10/JavaScript.pdf)
 - [JavaScript Garden](http://bonsaiden.github.io/JavaScript-Garden/ko/)
