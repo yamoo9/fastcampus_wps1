@@ -1,0 +1,55 @@
+// Color Scheme
+$red:   #CD162B
+$green: #1FC5A2
+$blue:  #2F77B8
+
+$support-old-ie: false
+
+=size($width: auto, $height: null, $align: null)
+	width: $width
+	height: $height
+	@if $align == center
+		margin:
+			left: auto
+			right: auto
+
+=clearfix
+	&::before
+		display: block
+		content: ''
+		clear: both
+	@if $support-old-ie
+		&
+			*zoom: 1
+
+#page
+	+clearfix
+	+size(80%, 100vh, center)
+	@extend .button
+	width: 1200px
+	header
+		position: absolute
+
+		h1.title
+			font-size: 22rem
+
+.button
+	background: $red
+
+	&:hover,
+	&:focus
+		background: rgba($red, 0.4)
+
+	&.green
+		background: $green
+	& > .blue
+		background: $green
+
+.container
+	@extend .button
+
+.footer
+	@extend .button
+
+.sidebar
+	@extend .button

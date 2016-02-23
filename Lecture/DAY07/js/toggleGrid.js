@@ -11,10 +11,17 @@ var body = document.body,
 // toggle_grid_btn.setAttribute('role', 'button');
 // toggle_grid_btn.setAttribute('aria-label', 'Toggle Grid');
 
-attr(toggle_grid_btn, 'class', 'button toggle-grid fa fa-bars');
-attr(toggle_grid_btn, 'href', '#');
-attr(toggle_grid_btn, 'role', 'button');
-attr(toggle_grid_btn, 'aria-label', 'Toggle Grid');
+attr(toggle_grid_btn, {
+	'class': 'button toggle-grid toggle-grid fa fa-bars',
+	'href': '#',
+	'role': 'button',
+	'aria-label': 'Toggle Grid'
+});
+
+// attr(toggle_grid_btn, 'class', 'button toggle-grid fa fa-bars');
+// attr(toggle_grid_btn, 'href', '#');
+// attr(toggle_grid_btn, 'role', 'button');
+// attr(toggle_grid_btn, 'aria-label', 'Toggle Grid');
 
 // 헬퍼함수를 사용할 경우,
 // [SET] attr(el, prop, value)

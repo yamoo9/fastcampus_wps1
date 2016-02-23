@@ -1,0 +1,47 @@
+// Color Scheme
+$red: #CD162B;
+$green: #1FC5A2;
+$blue: #2F77B8;
+
+@mixin clearfix {
+  &::before {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+#page {
+  @include clearfix;
+
+  width: 1200px;
+  margin: {
+    left: auto;
+    right: auto;
+  };
+
+  header {
+    position: absolute;
+
+    h1.title {
+      font-size: 22rem;
+    }
+  }
+}
+
+.button {
+  background: $red;
+
+  &:hover,
+  &:focus {
+    background: rgba($red, 0.4);
+  }
+
+  &.green {
+    background: $green;
+  }
+
+  & > .blue {
+    background: $green;
+  }
+}

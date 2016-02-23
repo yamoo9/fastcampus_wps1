@@ -1,0 +1,33 @@
+#page {
+  width: 80%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+#page::before {
+  display: block;
+  content: "";
+  clear: both;
+}
+#page header {
+  position: absolute;
+}
+#page header h1.title {
+  font-size: 22rem;
+}
+
+.button, #page, .container, .footer, .sidebar {
+  background: #CD162B;
+}
+.button:hover, #page:hover, .container:hover, .footer:hover, .sidebar:hover, .button:focus, #page:focus, .container:focus, .footer:focus, .sidebar:focus {
+  background: rgba(205, 22, 43, 0.4);
+}
+.button.green, .green#page, .green.container, .green.footer, .green.sidebar {
+  background: #1FC5A2;
+}
+.button > .blue, #page > .blue, .container > .blue, .footer > .blue, .sidebar > .blue {
+  background: #1FC5A2;
+}
+
+/*# sourceMappingURL=style.css.map */
