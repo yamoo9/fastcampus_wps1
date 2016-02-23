@@ -72,6 +72,14 @@ function addAttribute(element, property, value) {
 }
 
 // 속성을 설정하는데 도움을 주는 헬퍼 함수 attr()
+/**
+ * JSDOC
+ * [attr description]
+ * @param  {[type]} el    [description]
+ * @param  {[type]} prop  [description]
+ * @param  {[type]} value [description]
+ * @return {[type]}       [description]
+ */
 function attr(el, prop, value) {
 	// 유효성 검사
 	// 전달받은 각각의 인자 데이터 유형이 올바른지 검수
@@ -79,18 +87,39 @@ function attr(el, prop, value) {
 		throw new Error('첫번째 전달인자는 요소노드여야 합니다.');
 	}
 
-	if ( !isType(prop, 'string') ) {
-		throw new Error('두번째 전달인자는 문자 데이터 유형이어야 합니다.');
+	if ( !isType(prop, 'string') && !isType(prop, 'object') ) {
+		throw new Error('두번째 전달인자는 문자 데이터 유형 또는 객체 데이터 유형이어야만 합니다.');
 	}
 
-	if ( value ) {
-		// SET
-		el.setAttribute(prop, value);
-	} else {
-		// GET
-		return el.getAttribute(prop);
+	if ( isType(prop, 'string') ){
+		if ( value ) {
+			// SET
+			el.setAttribute(prop, value);
+		} else {
+			// GET
+			return el.getAttribute(prop);
+		}
+	}
+	if ( isType(prop, 'object') ) {
+		// 객체라면?
+		each(prop, function(key, value) {
+			el.setAttribute(key, value);
+		});
+
 	}
 
+}
+
+function each(data, callback) {
+	if ( isType(data, 'object') ) {
+		for (var key in data) {
+			// callback.call(null, key, data[key]);
+			callback.apply(null, [key, data[key]]);
+		}
+	}
+	if ( isType(data, 'array') ) {
+		data.forEach(callback);
+	}
 }
 
 window.$ = selector;

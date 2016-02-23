@@ -25,9 +25,6 @@ attr(toggle_grid_btn, 'aria-label', 'Toggle Grid');
 // 실제 문서에 생성한 요소노드를 추가(append)
 body.appendChild(toggle_grid_btn);
 
-
-
-
 // 문서 객체 참조
 // var toggleBtn = $('.toggle-grid');
 
