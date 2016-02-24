@@ -13,19 +13,19 @@
 (function(exports, $){
 	'use strict';
 
-	var panel_content = $.selector('.panel-content');
+	// var panel_content = $('.panel-content');
 
 	// console.log( panel_content );
 
-	$.attr(panel_content, {
-		'id': 'dynamic_set_id',
-		'title': '패널 콘텐츠'
-	});
+	// $.attr(panel_content, {
+	// 	'id': 'dynamic_set_id',
+	// 	'title': '패널 콘텐츠'
+	// });
 
 	// [안티 패턴] 암묵적으로 전역 변수 설정
 	// panel_content = panel_content;
 
 	// 외부 공개 (명시적)
-	exports.panel_content = panel_content;
+	// exports.panel_content = panel_content;
 
 })(this, DOM);

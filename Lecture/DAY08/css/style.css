@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! style.css © yamoo9.net, 2016 */
-.clearfix:before, .clearfix::before, .cf:before, ul:before, .page-header article:before, ul.menubar:before, .cf::before, ul::before, .page-header article::before, ul.menubar::before {
-  content: "";
+.clearfix:before, .clearfix::before, .cf:before, ul:before, .page-header article:before, .page-footer ul:before, ul.menubar:before, .cf::before, ul::before, .page-header article::before, .page-footer ul::before, ul.menubar::before {
+  content: '';
   display: block;
   clear: both;
 }
@@ -15,5 +15,3 @@
 ul.menubar {
   padding: 10px;
 }
-
-/*# sourceMappingURL=style.css.map */
