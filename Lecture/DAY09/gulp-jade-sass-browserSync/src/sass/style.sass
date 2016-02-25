@@ -1,0 +1,62 @@
+@import bourbon/bourbon
+@import susy/susy
+@import yamoo9/yamoo9
+
+
+html
+    background: #efefef
+
+*,
+*::before,
+*::after
+    margin-top: 0
+    box-sizing: border-box
+
+body
+    min-height: 100vh
+    width: 800px
+    margin: 0 auto
+    padding: 1em
+    background: #fff
+
+    a
+        $link-color: #7045CF
+        text-decoration: none
+        color: $link-color
+        font-weight: 900
+        // border-bottom: 0
+        // transition: all .2s ease
+
+        &:hover,&:focus
+            // border-left: solid 3px
+            // padding-left: 3px
+            color: shade($link-color, 30%)
+
+        &:focus
+            outline: 3px solid #ff0
+
+
+.skip-navigation
+    a
+        @extend %a11y-hidden
+        @extend %focusable
+
+#page-header
+    padding-bottom: .5em
+    border-bottom: 1px solid #cecece
+    margin-bottom: .5em
+
+nav
+    // +fixed(top 100px right 100px z-index 1000)
+    ul
+        @extend %cf
+        +margin(top 1rem bottom 0)
+        list-style: none
+        padding-left: 0
+    li
+        float: left
+    a
+        padding: .5rem 1rem
+
+[id^="point"]
+    margin-top: 1em

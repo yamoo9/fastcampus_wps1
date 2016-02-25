@@ -1,0 +1,89 @@
+nav ul {
+  *zoom: 1;
+}
+nav ul:before, nav ul:after {
+  content: "";
+  display: table;
+}
+nav ul:after {
+  clear: both;
+}
+
+.skip-navigation a {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+.skip-navigation a:active,
+.skip-navigation a:focus {
+  overflow: visible;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+html {
+  background: #efefef;
+}
+
+*,
+*::before,
+*::after {
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #fff;
+}
+body a {
+  text-decoration: none;
+  color: #7045CF;
+  font-weight: 900;
+}
+body a:hover, body a:focus {
+  color: #4e3091;
+}
+body a:focus {
+  outline: 3px solid #ff0;
+}
+
+#page-header {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #cecece;
+  margin-bottom: 0.5em;
+}
+
+nav ul {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+nav li {
+  float: left;
+}
+nav a {
+  padding: 0.5rem 1rem;
+}
+
+[id^="point"] {
+  margin-top: 1em;
+}
+
+
+
+/*# sourceMappingURL=maps/style.css.map */

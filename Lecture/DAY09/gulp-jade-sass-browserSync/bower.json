@@ -1,0 +1,24 @@
+{
+  "name": "gulp-jade-sass",
+  "description": "Gulp를 활용한 Jade & Sass 프로젝트 킷",
+  "main": "",
+  "authors": [
+    "Jee Hoon <yamoo9@naver.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yamoo9/fastcampus_wps1",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "susy": "^2.2.12",
+    "bourbon": "^4.2.6"
+  }
+}
