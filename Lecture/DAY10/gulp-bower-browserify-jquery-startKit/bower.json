@@ -1,0 +1,23 @@
+{
+  "name": "gulp-jquery-startkit",
+  "description": "jQuery, Sass, Browserify 프로젝트 스타트킷",
+  "authors": [
+    "Jee Hoon <yamoo9@naver.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery":        "~2.1.4",
+    "modernizr-min": "~3.2.0"
+  }
+}
