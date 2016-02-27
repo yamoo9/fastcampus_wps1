@@ -24,8 +24,7 @@
 	},
 	"browser": {
 		"jquery":    "./src/components/jquery/dist/jquery.min.js",
-		"modernizr": "./src/components/modernizr-min/dist/modernizr.min.js",
-		"angular":   "./src/components/angular/angular.min.js"
+		"modernizr": "./src/components/modernizr-min/dist/modernizr.min.js"
 	},
 	"browserify-shim": {
 		"jquery": {

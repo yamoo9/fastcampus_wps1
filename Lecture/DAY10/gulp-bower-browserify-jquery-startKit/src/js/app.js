@@ -3,42 +3,22 @@
 
 // 모듈
 // require('modernizr');
-// require('jquery');
+var $j = require('jquery');
+require('./jquery.skipNav');
+require('./jquery.caroucel');
 
 // ------------------------------
 // jQuery
 // ------------------------------
-// jQuery.noConflict(true);
+function init() {
+    // 스킵 내비게이션 설정
+    // $j.skipNav('.target');
+    var result = $j('.target, .target-other').caroucel();
+    // console.log(result); // ????
+    result.addClass('caroucel-dash');
 
-/**
- * --------------------------------
- * 스킵 네비게이션
- * ----------------------------- */
-// jQuery Plugin 코드
-// var pluginName = '';
-//
-// jQuery[pluginName] = function() {};
-// jQuery.fn[pluginName] = function() {};
+    // $j('.target').caroucel().animate(); // ????
 
-$.skipNav = function(selector) {
-    if ( $.type(selector) !== 'string' ) {
-        console.error('전달인자는 문자여야만 합니다.');
-        return;
-    }
-    var $skip = $(selector);
-    $skip
-        .addClass('skip-container')
-        .children('a').addClass('skip-content')
-        .on('click', 'a', skipToContent);
+}
 
-    function skipToContent(e) {
-        e.preventDefault();
-        var target_id = e.target.getAttribute('href');
-        var target = document.querySelector(target_id);
-        target.setAttribute('tabindex', -1);
-        target.focus();
-    }
-
-};
-
-// $.skipNav('.skip');
+$(init);
